@@ -28,7 +28,7 @@ public class Solution {
         int count = 0;//Helps determine if reached kth smallest number
         //Check if stack is empty or if root is null
         //Traverse tree using while loop
-        while (root != null || !stack.isEmpty()) {
+        while (!stack.isEmpty() || root != null) {
             // Reach the leftmost node first, continuously go left in the tree
             //until null. Since a BST, left node is smaller than right.
             while (root != null) {
